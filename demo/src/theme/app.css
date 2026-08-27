@@ -1,0 +1,36 @@
+@config "./tailwind.config.js";
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@import "./layers/_index.css";
+@import "./themes/_index.css";
+
+/**
+ * @custom-variant dark
+ *
+ * Defines a custom Tailwind variant named `dark` that applies styles when the target element
+ * is inside a `.dark` context—either directly or nested within it.
+ *
+ * Uses the `:where()` pseudo-class to match `.dark` and its descendants **without increasing specificity**.
+ * This ensures that `dark:` utilities remain predictable and don't override other styles unintentionally.
+ *
+ * Selector breakdown:
+ *   - `&:where(.dark, .dark *)` matches:
+ *       - Any element that is a direct child of `.dark`
+ *       - Any element nested inside `.dark`
+ *   - `:where()` ensures zero specificity, preserving Tailwind’s layering and cascade behavior.
+ *
+ * Example usage:
+ *   ```html
+ *   <div class="dark">
+ *     <button class="dark:bg-gray-800 bg-white">Toggle</button>
+ *   </div>
+ *   ```
+ *
+ * Why this matters:
+ *   - Prevents specificity creep compared to `:is()`
+ *   - Enables theme-based styling without breaking utility precedence
+ *   - Plays nicely with Tailwind’s `media` and `class` strategies for dark mode
+ */
+@custom-variant dark (&:where(.dark, .dark *));

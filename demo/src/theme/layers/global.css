@@ -1,0 +1,9 @@
+/* * {
+  color: var(--foreground);
+  font-size: var(--text-base);
+} */
+
+*::selection {
+  background-color: var(--selection-background);
+  color: var(--selection-foreground);
+}

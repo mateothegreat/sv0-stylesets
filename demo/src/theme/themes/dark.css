@@ -1,0 +1,49 @@
+.dark {
+  --focus-ring: oklch(0.52 0.25 289.1);
+
+  --border: oklch(0.63 0.26 29.23);
+  --background: oklch(0.16 0 264.44);
+  --foreground: oklch(0.79 0.02 248.12);
+  --card: oklch(0.17 0.01 276.28);
+  --card-foreground: oklch(0.984 0.003 247.858);
+  --popover: oklch(0.25 0.01 276.71);
+  --popover-foreground: oklch(0.984 0.003 247.858);
+  --text: oklch(0.929 0.013 255.508);
+  --text-foreground: oklch(0.83 0.03 246.25);
+  --primary: oklch(0.94 0.02 181.77);
+  --primary-foreground: oklch(0.208 0.042 265.755);
+  --secondary: oklch(0.279 0.041 260.031);
+  --trigger: oklch(0.15 0.01 263.97);
+  --secondary-foreground: oklch(0.984 0.003 247.858);
+  --muted: oklch(0.47 0.02 259.41 / 0.75);
+  --muted-foreground: oklch(0.47 0.02 259.41);
+  --accent: oklch(0.47 0.04 275.87 / 0.29);
+  --accent-foreground: oklch(0.984 0.003 247.858);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(0.28 0.03 274.38);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.38 0.03 300.18);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.42 0.02 270.88 / 0.18);
+  --sidebar-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-primary: oklch(0.47 0.27 284.45);
+  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-accent: oklch(0.47 0.04 275.87 / 0.29);
+  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-border: oklch(0.6 0.25 29.15);
+  --sidebar-ring: oklch(0.551 0.027 264.364);
+  --sidebar-width: 2000px;
+
+  --hover-background: var(--filetree-hover-background, var(--muted));
+  --hover-foreground: var(--filetree-hover-foreground, var(--foreground));
+
+  --selected-background: var(--filetree-selected-background, var(--muted));
+  --selected-foreground: var(--filetree-selected-foreground, var(--foreground));
+
+  --selection-background: oklch(0.86 0.28 141.25);
+  --selection-foreground: oklch(0 0 0);
+}

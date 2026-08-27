@@ -1,0 +1,9 @@
+body {
+  background-color: var(--background);
+  color: var(--text-foreground);
+  font-size: var(--text-base);
+}
+
+button {
+  --color-trigger: var(--chart-4);
+}

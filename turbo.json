@@ -1,0 +1,21 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "tasks": {
+    "db:push": {
+      "cache": false,
+      "dependsOn": ["db:up"]
+    },
+    "db:seed": {
+      "cache": false,
+      "dependsOn": ["db:push"]
+    },
+    "db:up": {
+      "cache": false
+    },
+    "dev": {
+      "cache": false,
+      "dependsOn": ["db:seed"],
+      "persistent": true
+    }
+  }
+}

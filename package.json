@@ -1,0 +1,72 @@
+{
+  "author": {
+    "email": "matthew@matthewdavis.io",
+    "name": "Matthew Davis"
+  },
+  "dependencies": {
+    "@vitest/browser": "^3.2.4",
+    "clsx": "^2.1.1",
+    "eslint": "^9.37.0",
+    "tailwind-merge": "^3.3.1",
+    "tailwind-variants": "^3.1.1"
+  },
+  "description": "Simple, type-safe CSS variant management for modern TypeScript developers",
+  "devDependencies": {
+    "@lucide/svelte": "^0.545.0",
+    "@sv0/common": "^0.0.2",
+    "@sveltejs/vite-plugin-svelte": "^6.2.1",
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/node": "^24.7.2",
+    "@wdio/cli": "^9.20.0",
+    "happy-dom": "^20.0.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-jsdoc": "^1.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "svelte": "^5.39.11",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9",
+    "vitest": "^3.2.4",
+    "vitest-browser-svelte": "^1.1.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "svelte": "./src/index.ts",
+      "import": "./src/index.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "package.json"
+  ],
+  "keywords": [
+    "css",
+    "variants",
+    "typescript",
+    "svelte",
+    "tailwind",
+    "design-system",
+    "component",
+    "styling"
+  ],
+  "name": "@sv0/stylesets",
+  "scripts": {
+    "build": "rm -rf dist && cp -r src dist && cp package.json dist",
+    "dev:sync": "npm run build && npm link",
+    "dev:sync:watch": "find src -name '*.ts' | entr -c npm run dev:sync",
+    "lint": "eslint src",
+    "release": "rm -rf dist && npm version from-git && cp -r src dist && cp package.json dist",
+    "test": "vitest run --project ts",
+    "test:ts": "vitest run --project ts",
+    "test:dom": "vitest run --project dom",
+    "test:watch": "vitest --watch",
+    "demo": "cd demo && pnpm dev"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "version": "0.0.0",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "types": "./src/index.ts"
+}
