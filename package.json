@@ -56,7 +56,7 @@
     "dev:sync": "npm run build && npm link",
     "dev:sync:watch": "find src -name '*.ts' | entr -c npm run dev:sync",
     "lint": "eslint src",
-    "release": "rm -rf dist && npm version from-git && cp -r src dist && cp package.json dist",
+    "release": "rm -rf dist && npm --no-git-tag-version --workspaces=false version from-git && cp -r src dist && cp package.json dist && npm publish --access public",
     "test": "vitest run --project ts",
     "test:ts": "vitest run --project ts",
     "test:dom": "vitest run --project dom",
@@ -65,7 +65,7 @@
   },
   "sideEffects": false,
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "./src/index.ts",
   "module": "./src/index.ts",
   "types": "./src/index.ts"
