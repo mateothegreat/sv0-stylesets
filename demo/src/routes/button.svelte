@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { LoaderCircle } from "@lucide/svelte";
+  import LoaderCircle from "~icons/lucide/loader-circle";
   import { Demo } from "@sv0/components/demos";
   import { createStyleSet, type VariantProps } from "../../../src";
 

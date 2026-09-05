@@ -12,7 +12,6 @@
   },
   "description": "Simple, type-safe CSS variant management for modern TypeScript developers",
   "devDependencies": {
-    "@lucide/svelte": "^0.545.0",
     "@sv0/common": "^0.0.2",
     "@sveltejs/vite-plugin-svelte": "^6.2.1",
     "@tailwindcss/vite": "^4.1.14",
@@ -56,7 +55,7 @@
     "dev:sync": "npm run build && npm link",
     "dev:sync:watch": "find src -name '*.ts' | entr -c npm run dev:sync",
     "lint": "eslint src",
-    "release": "rm -rf dist && npm --no-git-tag-version --workspaces=false version from-git && cp -r src dist && cp package.json dist && npm publish --access public",
+    "release": "rm -rf dist && npm --no-git-tag-version --workspaces=false version from-git && cp -r src dist && cp package.json dist && pnpm publish --access public",
     "test": "vitest run --project ts",
     "test:ts": "vitest run --project ts",
     "test:dom": "vitest run --project dom",
