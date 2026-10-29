@@ -38,7 +38,7 @@
     "vite": "^7.1.4",
     "vite-plugin-version-mark": "^0.2.2",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.2.4"
+    "vitest": "^5.0.5"
   },
   "name": "@sv0/ui-demo",
   "peerDependencies": {
